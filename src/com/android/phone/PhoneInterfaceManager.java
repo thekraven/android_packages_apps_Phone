@@ -149,7 +149,7 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
                     } else {
                         throw new IllegalStateException("Unexpected phone type: " + phoneType);
                     }
-                    if (DBG) log("CMD_END_CALL: " + (hungUp ? "hung up!" : "no call to hang up"));
+                    log("CMD_END_CALL: " + (hungUp ? "hung up!" : "no call to hang up"));
                     request.result = hungUp;
                     // Wake up the requesting thread
                     synchronized (request) {
