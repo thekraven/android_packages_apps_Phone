@@ -140,9 +140,9 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
                     boolean hungUp = false;
                     int phoneType = mPhone.getPhoneType();
                     if (phoneType == Phone.PHONE_TYPE_CDMA) {
-                        // CDMA: If the user presses the Power button we treat it as
-                        // ending the complete call session
-                        hungUp = PhoneUtils.hangupRingingAndActive(mPhone);
+                        // Force the power button to NOT end the call
+                        // Setting doesn't work so neither should you :P
+                        hungUp = false;
                     } else if (phoneType == Phone.PHONE_TYPE_GSM) {
                         // GSM: End the call as per the Phone state
                         hungUp = PhoneUtils.hangup(mCM);
