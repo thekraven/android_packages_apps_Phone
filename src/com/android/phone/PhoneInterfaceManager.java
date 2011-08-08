@@ -143,8 +143,8 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
                         // Setting doesn't work so neither should you :P
                         hungUp = false;
                     } else if (phoneType == Phone.PHONE_TYPE_GSM) {
-                        // GSM: End the call as per the Phone state
-                        hungUp = PhoneUtils.hangup(mCM);
+                        // We're not GSM but still
+                        hungUp = false;
                     } else {
                         throw new IllegalStateException("Unexpected phone type: " + phoneType);
                     }
