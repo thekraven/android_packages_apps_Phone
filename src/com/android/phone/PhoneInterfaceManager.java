@@ -141,11 +141,11 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
                     int phoneType = mPhone.getPhoneType();
                     if (phoneType == Phone.PHONE_TYPE_CDMA) {
                         // CDMA: If the user presses the Power button we treat it as
-                        // ending the complete call session
-                        hungUp = PhoneUtils.hangupRingingAndActive(mPhone);
+                        // stops the power button from ending a call
+                        hungUp = false;
                     } else if (phoneType == Phone.PHONE_TYPE_GSM) {
-                        // GSM: End the call as per the Phone state
-                        hungUp = PhoneUtils.hangup(mCM);
+                        // GSM: stops the power button from ending a call
+                        hungUp = false;
                     } else {
                         throw new IllegalStateException("Unexpected phone type: " + phoneType);
                     }
