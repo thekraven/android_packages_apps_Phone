@@ -793,7 +793,7 @@ public class InCallTouchUi extends FrameLayout
                 resAnswer = com.android.internal.R.drawable.ic_jog_dial_holo_answer;
                 resDecline = com.android.internal.R.drawable.ic_jog_dial_holo_decline;
                 break;
-	    case Blade:
+            case Blade:
                 resRingGreen = com.android.internal.R.drawable.jog_ring_blade_ring_green;
                 resRingRed = com.android.internal.R.drawable.jog_ring_blade_ring_red;
                 resTargetRed = com.android.internal.R.drawable.jog_tab_target_red;
