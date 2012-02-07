@@ -868,7 +868,6 @@ public class CallNotifier extends Handler
         // Release the ToneGenerator used for playing SignalInfo and CallWaiting
         if (mSignalInfoToneGenerator != null) {
             mSignalInfoToneGenerator.release();
-	    mSignalInfoToneGenerator = null;
         }
 
         // Clear ringback tone player
