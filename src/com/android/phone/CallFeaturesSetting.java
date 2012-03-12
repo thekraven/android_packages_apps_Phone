@@ -146,13 +146,9 @@ public class CallFeaturesSetting extends PreferenceActivity
     private static final String BUTTON_TTY_KEY    = "button_tty_mode_key";
     private static final String BUTTON_HAC_KEY    = "button_hac_key";
 	
-	private static final String BUTTON_CALLFORWARD = "button_cf_expand_key"; 
+    private static final String BUTTON_CALLFORWARD = "button_cf_expand_key"; 
     private static final String BUTTON_GSM_UMTS_MORE = "button_more_expand_key"; 
     private static final String BUTTON_CDMA_PRIVACY = "button_voice_privacy_key"; 
-
-    private static final String BUTTON_CALLFORWARD = "button_cf_expand_key";
-    private static final String BUTTON_GSM_UMTS_MORE = "button_more_expand_key";
-    private static final String BUTTON_CDMA_PRIVACY = "button_voice_privacy_key";
 
     private static final String BUTTON_GSM_UMTS_OPTIONS = "button_gsm_more_expand_key";
     private static final String BUTTON_CDMA_OPTIONS = "button_cdma_more_expand_key";
